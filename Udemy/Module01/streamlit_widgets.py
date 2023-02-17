@@ -34,3 +34,20 @@ with st.expander("Rich"):
 
 
 # Working with Select
+my_lang = ["Python","C#","SQL","Java"]
+
+choice = st.selectbox("Language",my_lang)
+st.write("You Selected {}".format(choice))
+
+# Multiple Selection
+
+spoken_lang = ("English","Filipino","Korean","German")
+my_spoken_lang = st.multiselect("Spoken Language",spoken_lang,default="English")
+
+# Slider
+# Numbers (Int, Float, Date)
+age = st.slider("Age",1,100,25)
+
+# Select Slider
+# Any Datatype
+color = st.select_slider("Choose Color", options= ["Red","Blue","Yellow","Green","Black"],value=("Blue","Green"))

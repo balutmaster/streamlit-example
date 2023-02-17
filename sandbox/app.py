@@ -13,7 +13,7 @@ def connect_to_snowflake(acct,usr,pwd,rl,wh,db):
     st.session_state['is_ready'] = True
     return cs
 
-@st.cache()
+#@st.cache()
 def get_data():
     query = 'select    warehouse_name \
         , query_type \

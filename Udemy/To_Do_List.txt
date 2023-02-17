@@ -1,0 +1,13 @@
+- vw_table_snapshot only looks at the top 100 tables in size
+	- need to modify to include all current tables + any new tables in the top 100
+			
+- Add partition info to the active tables view
+
+- Modify table and query performance to always pull the info for at least 10 tables even if they do not meet the criteria (bytes, rows, query apperances, etc)
+
+- OVerhaul cost Dashboard 
+		- forecasts
+		
+- Handle account_usage incremental loads when columns are added by Snowflake.
+
+- Fix relationship for warehouse credit deviation in warehouse usage
